@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 * {
   padding: 0px;
   margin: 0px;
@@ -106,13 +104,6 @@ body {
 .wrapper > * {
   min-width: 0;
 }
-
-/*
-(i) Стили будут применяться ко 
-всем классам содержащим *__container
-Например header__container, main__container и т.д.
-Снипет (HTML): cnt
-*/
 
 [class*=__container] {
   max-width: 75rem;
@@ -248,7 +239,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: calc(40px + 0.3472222222vw);
-  line-height: calc(40px + 1.25vw);
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.36px;
 }
@@ -852,7 +843,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 4.4444444444rem;
-  line-height: 4.8888888889;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.36px;
   margin-bottom: 16px;
@@ -1124,7 +1115,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1.3888888889rem;
-  line-height: 2.1111111111;
+  line-height: 1.5;
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: #FFB342;
@@ -1151,7 +1142,7 @@ body {
   background-color: #fff;
 }
 
-.no-webp .statistics .statistics__wrapper{
+.no-webp .statistics .statistics__wrapper {
   background-image: url("../img/statistics-bg.jpg"); }
 
 .statistics .statistics__wrapper {
@@ -1380,6 +1371,7 @@ body {
 
 .other .other__container .other__wrapper .other__wrapper-inner .testimonial {
   margin-bottom: 40px;
+  min-height: 695px;
 }
 
 .other .other__container .other__wrapper .other__wrapper-inner .testimonial .block__top-title {
@@ -1399,6 +1391,13 @@ body {
 .other .other__container .other__wrapper .other__wrapper-inner .testimonial .testimonial__slider-blocks {
   border: 1px solid #DCDCDC;
   padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .other .other__container .other__wrapper .other__wrapper-inner .testimonial .testimonial__slider-blocks .swiper .swiper-wrapper {
@@ -1407,6 +1406,7 @@ body {
 
 .other .other__container .other__wrapper .other__wrapper-inner .testimonial .testimonial__slider-blocks .swiper .swiper-wrapper .swiper-slide {
   padding: 0px 41px 36px 41px;
+  min-height: 389px;
 }
 
 .other .other__container .other__wrapper .other__wrapper-inner .testimonial .testimonial__slider-blocks .swiper .swiper-wrapper .swiper-slide .swiper__top-block {
@@ -1577,7 +1577,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1.3888888889rem;
-  line-height: 1.7777777778;
+  line-height: 1.3;
   letter-spacing: 0.36px;
   color: #1C2752;
   margin-bottom: 13px;
@@ -2112,7 +2112,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
-  line-height: 3.2222222222;
+  line-height: 1.3;
   text-align: center;
   letter-spacing: 0.36px;
   color: #1C2752;
@@ -2209,7 +2209,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1.6666666667rem;
-  line-height: 2.3333333333;
+  line-height: 1.3;
   text-align: left;
   letter-spacing: 0.36px;
   max-width: 525px;
@@ -2296,7 +2296,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1.7777777778rem;
-  line-height: 2.5;
+  line-height: 1.3;
   letter-spacing: 0.36px;
   color: #1C2752;
   margin-bottom: 9px;
@@ -2714,7 +2714,7 @@ body {
     width: 100%;
   }
 
-  .no-webp .statistics .statistics__wrapper .statistics__container .statistics__wrapper__inner .statistics__numbers .statistics__numbers-wrapper{
+  .no-webp .statistics .statistics__wrapper .statistics__container .statistics__wrapper__inner .statistics__numbers .statistics__numbers-wrapper {
     background-image: url("../img/statistics-bg.jpg"); }
 
   .statistics .statistics__wrapper .statistics__container .statistics__wrapper__inner .statistics__numbers .statistics__numbers-wrapper {
@@ -3178,6 +3178,10 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .footer .footer__container .footer__wrapper .footer__top .footer__logo {
+    display: none;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -3321,9 +3325,9 @@ body {
   }
 }
 
-.webp .statistics .statistics__wrapper{ background-image: url(../img/statistics-bg.webp); }
+.webp .statistics .statistics__wrapper { background-image: url(../img/statistics-bg.webp); }
 
-@media (max-width: 1101.98px){
+@media (max-width: 1101.98px) {
 
-  .webp .statistics .statistics__wrapper .statistics__container .statistics__wrapper__inner .statistics__numbers .statistics__numbers-wrapper{ background-image: url(../img/statistics-bg.webp); }
+  .webp .statistics .statistics__wrapper .statistics__container .statistics__wrapper__inner .statistics__numbers .statistics__numbers-wrapper { background-image: url(../img/statistics-bg.webp); }
 }
