@@ -1138,6 +1138,10 @@ body {
   margin-top: auto;
 }
 
+.webp .statistics .statistics__wrapper {
+  background-image: none !important;
+}
+
 .statistics {
   background-color: #fff;
 }
